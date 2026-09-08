@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   EYES AND DENTAL CLINIC – FONDATION MISÉRICORDE
+   Système de design global (base visuelle pour tout le site)
+   ========================================================================= */
+
+/* ---------------------------------------------------------------------------
+   DESIGN TOKENS (Tailwind 4)
+   Ces tokens génèrent automatiquement les utilitaires Tailwind :
+   bg-primary, text-ink, font-sans, etc.
+--------------------------------------------------------------------------- */
+@theme {
+  /* Polices */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Couleur principale */
+  --color-primary: #0057a0;
+  --color-primary-dark: #00427c;
+  --color-primary-darker: #003059;
+  --color-primary-light: #0a6fbe;
+  --color-primary-lighter: #eaf3fb;
+  --color-primary-soft: #f4f9fd;
+
+  /* Gris */
+  --color-ink: #1f2937; /* gris foncé (texte) */
+  --color-slate: #4b5563; /* gris moyen */
+  --color-mist: #6b7280; /* gris secondaire */
+  --color-cloud: #f3f4f6; /* gris très clair (fonds) */
+  --color-mistline: #e5e7eb; /* bordures */
+
+  /* Teinte aqua / menthe très légère */
+  --color-aqua: #e9f5f4;
+  --color-aqua-deep: #d7eeec;
+  --color-mintline: #bfe3e0;
+
+  /* Blanc & neutre */
+  --color-pure: #ffffff;
+
+  /* Urgences (rouge réservé) */
+  --color-emergency: #d92d20;
+  --color-emergency-dark: #b42318;
+  --color-emergency-soft: #fef3f2;
+
+  /* Rayons de bordures */
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+
+  /* Ombres douces (discrètes, non fortes) */
+  --shadow-soft: 0 1px 2px rgb(0 87 160 / 0.06), 0 4px 12px rgb(0 87 160 / 0.06);
+}
+
+/* ---------------------------------------------------------------------------
+   BASE
+--------------------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-primary-darker;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  p {
+    @apply text-slate;
+  }
+
+  a {
+    @apply text-primary transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-primary-dark;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   COMPOSANTS RÉUTILISABLES
+   Pattern : classe de base `.btn` + classe de variante (`.badge` + `.badge-*`)
+   Utilisation : class="btn btn-primary btn-md"
+--------------------------------------------------------------------------- */
+@layer components {
+  /* --- Boutons : base --- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill font-display font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  /* --- Boutons : variantes --- */
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary bg-transparent text-primary hover:bg-primary-soft;
+  }
+
+  .btn-outline-light {
+    @apply border-2 border-white bg-transparent text-white hover:bg-white/10;
+  }
+
+  .btn-emergency {
+    @apply bg-emergency text-white hover:bg-emergency-dark focus-visible:outline-emergency;
+  }
+
+  /* --- Boutons : tailles --- */
+  .btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-md {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
+  /* --- Cartes --- */
+  .card {
+    @apply rounded-card border border-mistline bg-white shadow-soft;
+  }
+
+  .card-hover {
+    @apply transition-shadow duration-300 hover:shadow-lg;
+  }
+
+  .card-soft {
+    @apply rounded-card bg-primary-lighter;
+  }
+
+  /* --- Badges / étiquettes --- */
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-pill px-3 py-1 text-sm font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-primary-soft text-primary;
+  }
+
+  .badge-aqua {
+    @apply bg-aqua text-primary-darker;
+  }
+
+  .badge-emergency {
+    @apply bg-emergency-soft text-emergency;
+  }
+
+  /* --- Titres de section --- */
+  .section-eyebrow {
+    @apply mb-3 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-primary;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .section-subtitle {
+    @apply mx-auto mt-4 max-w-2xl text-lg text-slate;
+  }
+
+  /* --- Sections --- */
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-narrow {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-cloud {
+    @apply bg-cloud;
+  }
+
+  .section-aqua {
+    @apply bg-aqua;
+  }
+
+  /* --- Champs de formulaire --- */
+  .input {
+    @apply w-full rounded-lg border border-mistline bg-white px-4 py-3 text-ink placeholder:text-mist transition-colors duration-200 focus:border-primary focus:outline-none;
+  }
+
+  .label {
+    @apply mb-1 block text-sm font-medium text-ink;
+  }
+
+  /* --- Liens internes --- */
+  .link {
+    @apply text-primary underline-offset-4 hover:text-primary-dark hover:underline;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   UTILITAIRES PERSONNALISÉS
+--------------------------------------------------------------------------- */
+@layer utilities {
+  /* Masquer visuellement mais lisible par lecteurs d'écran */
+  .sr-only {
+    @apply absolute h-px w-px overflow-hidden whitespace-nowrap border-0 p-0;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+  }
+}
