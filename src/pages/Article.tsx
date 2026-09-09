@@ -5,6 +5,9 @@ import { formatDate } from '@/utils/format'
 import Seo from '@/components/Seo'
 import { CalendarIcon, FileTextIcon, TagIcon, UserIcon, WhatsAppIcon, PhoneIcon } from '@/components/icons'
 
+/** Paragraphe « image » : ![fichier.jpg|Légende optionnelle] (images dans public/images/blog) */
+const IMAGE_BLOCK = /^!\[([^\]|]+)(?:\|([^\]]*))?\]$/
+
 export default function Article() {
   const { slug } = useParams<{ slug: string }>()
   const article = ALL_ARTICLES.find((a) => a.slug === slug)
@@ -92,11 +95,31 @@ export default function Article() {
 
         {/* Contenu */}
         <div className="mt-10 space-y-6">
-          {paragraphs.map((paragraph) => (
-            <p key={paragraph} className="text-lg leading-relaxed text-slate">
-              {paragraph}
-            </p>
-          ))}
+          {paragraphs.map((paragraph, index) => {
+            const image = paragraph.match(IMAGE_BLOCK)
+            if (image) {
+              const [, file, alt = ''] = image
+              return (
+                <figure key={index} className="overflow-hidden rounded-card">
+                  <img
+                    src={`/images/blog/${file}`}
+                    alt={alt}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-video w-full object-cover"
+                  />
+                  {alt && (
+                    <figcaption className="mt-2 text-center text-xs text-mist">{alt}</figcaption>
+                  )}
+                </figure>
+              )
+            }
+            return (
+              <p key={index} className="text-lg leading-relaxed text-slate">
+                {paragraph}
+              </p>
+            )
+          })}
         </div>
 
         {/* Bloc de contact */}
