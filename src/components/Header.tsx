@@ -28,9 +28,6 @@ export default function Header() {
             <span className="font-display text-lg font-bold leading-tight text-primary-darker">
               CMOK Kolwezi
             </span>
-            <span className="hidden text-xs leading-tight text-mist sm:block">
-              Fondation Miséricorde
-            </span>
           </Link>
 
           {/* Desktop nav */}

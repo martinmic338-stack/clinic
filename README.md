@@ -1,4 +1,4 @@
-# Eyes & Dental Clinic – Fondation Miséricorde
+# CMOK Kolwezi
 
 Site web de la clinique ophtalmologique et dentaire.
 

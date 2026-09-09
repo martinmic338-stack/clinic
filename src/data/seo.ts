@@ -5,7 +5,6 @@
  */
 export const SITE = {
   name: 'CMOK Kolwezi',
-  organization: 'FONDATION MISÉRICORDE',
   /** Domaine réel à renseigner avant publication */
   url: 'https://eyedental-kolwezi.org',
   defaultTitle:
@@ -88,7 +87,7 @@ export const PAGE_META: Record<string, { title: string; description: string }> =
   '/mentions-legales': {
     title: 'Mentions légales — CMOK Kolwezi',
     description:
-      'Mentions légales du site d’CMOK Kolwezi, Fondation Miséricorde.',
+      'Mentions légales du site de CMOK Kolwezi.',
   },
   '/confidentialite': {
     title: 'Politique de confidentialité — CMOK Kolwezi',

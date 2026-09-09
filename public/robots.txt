@@ -1,4 +1,4 @@
-# CMOK Kolwezi – Fondation Miséricorde
+# CMOK Kolwezi
 # ⚠️ Remplacez le domaine ci-dessous par le domaine réel avant mise en ligne.
 
 User-agent: *

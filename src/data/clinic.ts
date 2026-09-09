@@ -4,7 +4,6 @@
  */
 export const CLINIC = {
   name: 'CMOK Kolwezi',
-  organization: 'FONDATION MISÉRICORDE',
   slogan: 'Votre sourire et votre vision sont notre mission.',
   address: 'Av. Lumumba, N° 356, Commune de Manika – Kolwezi, Lualaba',
 

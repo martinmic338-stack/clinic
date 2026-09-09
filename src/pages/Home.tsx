@@ -57,9 +57,6 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-primary-darker/85" />
       <div className="section-narrow relative text-center text-white">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
-          {CLINIC.organization}
-        </p>
         <h1 className="mx-auto mt-4 max-w-3xl text-white">
           {CLINIC.slogan}
         </h1>
@@ -162,8 +159,8 @@ function AboutSection() {
           <p className="section-eyebrow">La clinique</p>
           <h2 className="section-title">Une médecine moderne, proche de vous</h2>
           <p className="mt-5 text-lg text-slate">
-            CMOK Kolwezi est une initiative de la Fondation Miséricorde,
-            dédiée à une prise en charge médicale de qualité au cœur de Kolwezi.
+            CMOK Kolwezi est une clinique dédiée à une prise en charge
+            médicale de qualité au cœur de Kolwezi.
           </p>
           <p className="mt-3">
             Des spécialités complémentaires — de l’ophtalmologie à la dentisterie,

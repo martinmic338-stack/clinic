@@ -59,7 +59,7 @@ function Hero() {
           Une médecine moderne, proche de vous
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-white/85">
-          {CLINIC.name} – {CLINIC.organization} accompagne ses patients avec une approche
+          {CLINIC.name} accompagne ses patients avec une approche
           médicale spécialisée, humaine et professionnelle.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -141,7 +141,7 @@ function MissionSection() {
             <p className="section-eyebrow">Notre engagement</p>
             <h2 className="section-title">Notre mission</h2>
             <p className="mt-5">
-              La {CLINIC.name} – {CLINIC.organization} a pour mission d'offrir une prise en
+              La {CLINIC.name} a pour mission d'offrir une prise en
               charge médicale de qualité, spécialisée et humaine, où chaque patient est
               accompagné avec attention et respect.
             </p>

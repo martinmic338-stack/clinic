@@ -23,7 +23,7 @@ export default function Achievements() {
       <PageHero
         eyebrow="Réalisations"
         title="Notre expertise en action"
-        intro="Bilan des actions et travaux menés par la clinique et la Fondation Miséricorde."
+        intro="Bilan des actions et travaux menés par la clinique."
       />
 
       <section className="section pt-0">
