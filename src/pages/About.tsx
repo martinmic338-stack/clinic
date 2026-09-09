@@ -46,7 +46,7 @@ function Hero() {
     <section className="relative flex min-h-[70svh] items-center overflow-hidden">
       <img
         src="/images/hero/clinic-team.jpg"
-        alt="Équipe de la clinique EYES AND DENTAL CLINIC"
+        alt="Équipe de la clinique CMOK Kolwezi"
         fetchPriority="high"
         className="absolute inset-0 size-full object-cover"
       />
@@ -108,7 +108,7 @@ function PresentationSection() {
           <div className="overflow-hidden rounded-2xl shadow-lg">
             <img
               src="/images/hero/hero-clinic.jpg"
-              alt="Accueil de la clinique EYES AND DENTAL CLINIC"
+              alt="Accueil de la clinique CMOK Kolwezi"
               loading="lazy"
               decoding="async"
               className="aspect-[4/3] size-full object-cover"

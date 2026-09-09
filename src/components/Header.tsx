@@ -26,7 +26,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex shrink-0 items-center gap-2">
             <span className="font-display text-lg font-bold leading-tight text-primary-darker">
-              EYES &amp; DENTAL
+              CMOK Kolwezi
             </span>
             <span className="hidden text-xs leading-tight text-mist sm:block">
               Fondation Miséricorde

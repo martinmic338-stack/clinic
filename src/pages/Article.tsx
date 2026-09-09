@@ -38,7 +38,7 @@ export default function Article() {
   return (
     <>
       <Seo
-        title={`${article.title} — EYES AND DENTAL CLINIC`}
+        title={`${article.title} — CMOK Kolwezi`}
         description={`${article.summary} Actualités de la clinique à Kolwezi.`}
       />
       <section className="section">

@@ -162,7 +162,7 @@ function AboutSection() {
           <p className="section-eyebrow">La clinique</p>
           <h2 className="section-title">Une médecine moderne, proche de vous</h2>
           <p className="mt-5 text-lg text-slate">
-            EYES AND DENTAL CLINIC est une initiative de la Fondation Miséricorde,
+            CMOK Kolwezi est une initiative de la Fondation Miséricorde,
             dédiée à une prise en charge médicale de qualité au cœur de Kolwezi.
           </p>
           <p className="mt-3">

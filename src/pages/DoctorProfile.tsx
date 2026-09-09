@@ -65,7 +65,7 @@ export default function DoctorProfile() {
   return (
     <>
       <Seo
-        title={`${doctor.name} — ${doctor.specialty} | EYES AND DENTAL CLINIC Kolwezi`}
+        title={`${doctor.name} — ${doctor.specialty} | CMOK Kolwezi`}
         description={`${doctor.role} en ${doctor.specialty} à Kolwezi. Prenez rendez-vous avec ${doctor.name} à la clinique.`}
       />
       <section className="section section-aqua">

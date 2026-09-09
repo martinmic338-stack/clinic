@@ -1,4 +1,4 @@
-# EYES AND DENTAL CLINIC – Fondation Miséricorde
+# CMOK Kolwezi – Fondation Miséricorde
 # ⚠️ Remplacez le domaine ci-dessous par le domaine réel avant mise en ligne.
 
 User-agent: *

@@ -6,8 +6,8 @@ export default function NotFound() {
   return (
     <>
       <Seo
-        title="Page introuvable — EYES AND DENTAL CLINIC"
-        description="La page demandée est introuvable. Retournez à l’accueil d’EYES AND DENTAL CLINIC."
+        title="Page introuvable — CMOK Kolwezi"
+        description="La page demandée est introuvable. Retournez à l’accueil de CMOK Kolwezi."
       />
       <section className="section">
         <div className="section-narrow">

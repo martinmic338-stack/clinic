@@ -42,7 +42,7 @@ export default function ProductDetail() {
   return (
     <>
       <Seo
-        title={`${product.name} — Produits optiques | EYES AND DENTAL CLINIC Kolwezi`}
+        title={`${product.name} — Produits optiques | CMOK Kolwezi`}
         description={`${product.name} (réf. ${product.reference}) disponible à la clinique à Kolwezi. Demandez le prix sur WhatsApp.`}
       />
       <section className="section">
