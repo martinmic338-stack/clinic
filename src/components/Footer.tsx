@@ -68,7 +68,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="section-narrow flex flex-col items-center justify-between gap-2 py-4 text-xs text-white/50 sm:flex-row">
-          <p>&copy; {new Date().getFullYear()} Eyes and Dental Clinic – Fondation Miséricorde</p>
+          <p>&copy; {new Date().getFullYear()} Eyes and Dental Clinic – Fondation Miséricorde — Designed by OPTIMUS</p>
           <div className="flex gap-4">
             <Link to="/mentions-legales" className="hover:text-white/80">Mentions légales</Link>
             <Link to="/confidentialite" className="hover:text-white/80">Confidentialité</Link>
