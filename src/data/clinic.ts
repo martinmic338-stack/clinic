@@ -5,7 +5,7 @@
 export const CLINIC = {
   name: 'CMOK Kolwezi',
   slogan: 'Votre sourire et votre vision sont notre mission.',
-  address: 'Av. Lumumba, N° 356, Commune de Manika – Kolwezi, Lualaba',
+  address: '62, Av Banza Mano, Q/Mutoshi, C/Manika',
 
   phone: {
     emergency: '+243 84 552 00 21',
@@ -18,7 +18,7 @@ export const CLINIC = {
 
   /** Lien Google Maps : recherche de l'adresse (aucune coordonnée inventée) */
   mapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    'Av. Lumumba, N° 356, Commune de Manika – Kolwezi, Lualaba',
+    '62, Av Banza Mano, Q/Mutoshi, C/Manika',
   )}`,
 } as const
 
