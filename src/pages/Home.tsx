@@ -18,6 +18,7 @@ import {
   HeartIcon,
   GlassesIcon,
   CalendarIcon,
+  ArrowRightIcon,
 } from '@/components/icons'
 
 /* ------------------------------------------------------------------ */
@@ -381,6 +382,13 @@ function NewsSection() {
             </p>
           </div>
         )}
+
+        <div className="mt-10 text-center">
+          <Link to="/actualites" className="btn btn-outline btn-md">
+            Voir plus
+            <ArrowRightIcon className="size-4" />
+          </Link>
+        </div>
       </div>
     </section>
   )
