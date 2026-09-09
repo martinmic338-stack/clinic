@@ -14,7 +14,7 @@ export const CLINIC = {
     whatsappLink: 'https://wa.me/243992057204',
   },
 
-  emails: ['eyedental7@gmail.com', 'eydentalclinic@gmail.com'],
+  emails: ['info@cemok.com'],
 
   /** Lien Google Maps : recherche de l'adresse (aucune coordonnée inventée) */
   mapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
