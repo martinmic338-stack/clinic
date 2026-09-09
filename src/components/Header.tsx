@@ -24,10 +24,12 @@ export default function Header() {
       <header className="sticky top-0 z-40 border-b border-mistline bg-white/95 backdrop-blur-sm">
         <div className="section-narrow flex h-16 items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex shrink-0 items-center gap-2">
-            <span className="font-display text-lg font-bold leading-tight text-primary-darker">
-              CMOK Kolwezi
-            </span>
+          <Link to="/" className="flex shrink-0 items-center" aria-label="CMOK Kolwezi — Accueil">
+            <img
+              src="/images/logo/logo.png"
+              alt="CMOK Kolwezi"
+              className="h-10 w-auto sm:h-11"
+            />
           </Link>
 
           {/* Desktop nav */}
